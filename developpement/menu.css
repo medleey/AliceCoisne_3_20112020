@@ -1,0 +1,250 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+@-webkit-keyframes check-appear {
+  from {
+    margin-left: 110%;
+  }
+  to {
+    margin-left: 90%;
+  }
+}
+
+@keyframes check-appear {
+  from {
+    margin-left: 110%;
+  }
+  to {
+    margin-left: 90%;
+  }
+}
+
+@-webkit-keyframes move-price {
+  from {
+    margin-right: 0%;
+  }
+  to {
+    margin-right: 20%;
+  }
+}
+
+@keyframes move-price {
+  from {
+    margin-right: 0%;
+  }
+  to {
+    margin-right: 20%;
+  }
+}
+
+/*HEADER*/
+header {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+header a {
+  font-size: 1.6rem;
+  float: left;
+  text-decoration: none;
+}
+
+header > h1 {
+  text-align: center;
+  font-family: 'shrikhand', cursive;
+  background-color: white;
+  margin: 0;
+  padding: 10px;
+  font-size: 25px;
+}
+
+/*IMAGE*/
+img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+
+/*SECTION MENU*/
+.carte {
+  background-color: #EFEFEF;
+  position: relative;
+  -webkit-transform: translateY(-5%);
+          transform: translateY(-5%);
+  height: auto;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+  padding-bottom: 50px;
+}
+
+section > h2 {
+  margin: 20px;
+  text-align: center;
+  font-family: 'shrikhand', cursive;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#heart {
+  height: 30px;
+  width: 30px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#heart:hover {
+  fill: url(#gradient);
+  stroke-width: 0;
+}
+
+#heart:hover #stroke {
+  stroke-width: 0;
+}
+
+/*MENU*/
+.menu_entier {
+  margin: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.categorie {
+  font-weight: lighter;
+  display: block;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #99E2D0;
+  width: 2em;
+}
+
+.sous_menu {
+  max-width: 350px;
+  width: 100%;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 30px 30px 30px 30px;
+  -webkit-box-shadow: 2px 2px 5px 2px #dddddd;
+          box-shadow: 2px 2px 5px 2px #dddddd;
+  font-family: "roboto";
+  font-size: 1rem;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-animation: menu 1000ms 3500ms both;
+          animation: menu 1000ms 3500ms both;
+  overflow: hidden;
+}
+
+.sous_menu > h3 {
+  margin: 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sous_menu > p {
+  margin: 0px;
+  margin-top: 5px;
+  width: 85%;
+  font-weight: lighter;
+}
+
+.sous_menu :nth-child(1) {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 100%;
+          flex: 1 100%;
+  margin-right: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.prix {
+  right: -20px;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  width: 140px;
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  -webkit-box-shadow: 0 3px 3px gray;
+          box-shadow: 0 3px 3px gray;
+  margin-top: 50px;
+}
+
+.fas.fa-check {
+  background-color: white;
+  margin: 35%;
+  border-radius: 50%;
+  color: #99e2d0;
+  padding: 3px;
+}
+
+/*FOOTER*/
+footer {
+  background-color: #2c2c2c;
+  color: white;
+  padding: 20px;
+  text-decoration: none;
+  -webkit-transform: translateY(-30%);
+          transform: translateY(-30%);
+}
+
+.logo_footer {
+  font-family: 'shrikhand', cursive;
+  margin: 0px;
+  font-size: 18px;
+  padding: 0;
+}
+
+footer ul > li > a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+footer ul {
+  padding: 0;
+  list-style: none;
+  line-height: 30px;
+}
+/*# sourceMappingURL=menu.css.map */

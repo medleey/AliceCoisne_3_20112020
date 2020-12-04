@@ -59,8 +59,8 @@ h1 {
 
 .background2 {
     background-color: #f6f6f6;
-    padding: 20px;
     padding-bottom: 55px;
+    padding-top: 20px;
 }
 
 p.discover {
@@ -83,6 +83,11 @@ p.discover {
     margin: auto;
     box-shadow: 1px 1px 10px lightgrey;
 
+}
+
+.linear-gradient:hover {
+    box-shadow: 2px 2px 5px 2px #B9B9B9;
+    opacity: 90%;
 }
 
 /*ASIDE*/
@@ -112,14 +117,16 @@ aside {
     margin: auto;
     margin-bottom: 20px;
     margin-top: 20px;
+    position: relative;
 }
 
-.container1 :hover {
-    background-color: #fff3fc
+.container1 :hover{
+    background: #fff3fc;
+
 }
 
-.container1 :hover :nth-child(1) {
-    color: #FF79DA
+.container1 :hover :nth-child(1){
+    color: #FF79DA;
 }
 
 .first { 
@@ -127,16 +134,17 @@ aside {
     width: 25px;
     background-color: #9356DC;
     border-radius: 25px;
-    position: relative;
     top: 50%;
     transform: translateY(-50%);
     left: -10px;
+    position: absolute;
 }
 
 .choose {
     display: flex;
     align-items: center;
-    padding: 20px;
+    width: 100%;
+    padding-left: 40px;
 }
 
 .choose>p {
@@ -161,27 +169,6 @@ aside {
     padding-right: 20px;
 }
 
-button a {
-    text-decoration: none;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    }
-
-button {
-    display: block;
-    margin: auto;
-    }
-
-.first { 
-    height: 25px;
-    width: 25px;
-    background-color: #9356DC;
-    border-radius: 25px;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    left: -10px;
-}
 
 .first>p {
     margin: unset;
@@ -259,14 +246,16 @@ article img {
     margin-top: unset;
 }
 
-.heart {
+.fa-heart {
     font-size: 1.5em;
+    background: white;
 }
 
-.btn :hover{
-    background-color: linear-gradient(to bottom right, #FF79DA, #9356DC);
-
+.fa-heart:hover{
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    border-style: unset;
 }
+
 
 article h3 {
     margin-bottom: unset;
@@ -298,9 +287,20 @@ footer ul {
 
 }
 
+footer ul{
+    display: flex;
+    justify-content: space-around;
+}
+
 
 
 /*RESPONSIVE*/
+@media (max-width: 992px){
+    .desktop_{
+        display: unset
+    }
+}
+
 @media (max-width:576px) {
 /*INDEX*/ /*NAV*/ 
 .desktop_ {
@@ -323,42 +323,10 @@ header img {
     padding-bottom: 21px;
 }
 
-.background {
-    background-color: #eaeaea;
-}
-
-h1 {
-    text-align: center;
-    font-weight: bold;
-    font-size: x-large;
-    margin-bottom: 15px;
-}
-
-.ville {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.ville p {
-    margin-left: 15px;
-}
-
-.background2 {
-    background-color: #f6f6f6;
-    padding: 20px;
-    padding-bottom: 55px;
-}
-
-p.discover {
-    text-align:center;
-    font-weight: lighter;
-    margin-bottom: 30px;
-}
 
 /*ASIDE*/
 .center {
-    max-width: 375px;
+    max-width: 576px;
     width: calc(100% - 40px);
     margin: 0 auto;
     padding: 0 20px;
@@ -367,112 +335,6 @@ p.discover {
 .title1 {
     margin-top: 30px;
     margin-bottom: 0px;
-}
-
-
-button a {
-    text-decoration: none;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    }
-
-button {
-    display: block;
-    margin: auto;
-    }
-
-.first { 
-    height: 25px;
-    width: 25px;
-    background-color: #9356DC;
-    border-radius: 25px;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    left: -10px;
-}
-
-.first>p {
-    margin: unset;
-    padding: 3px 5px;
-    text-align: center;
-    color: white;
-}
-
-/*ARTICLE*/
-article img {
-    display: block;
-    width: 100%;
-    max-width: 335px;
-    height: 175px;
-    border-radius: 15px 15px 0px 0px;
-    object-fit: cover;
-}
-
-.container2 {
-    background-color: white;
-    box-shadow: 1px 1px 10px lightgrey;
-    border-radius: 15px;
-    width: 100%;
-    max-width: 320px;
-    display: flex;
-    margin: auto;
-    margin-bottom: 20px;
-    margin-top: 20px
-}
-
-.container2>a {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    text-decoration: none;
-}
-
-.container2>a>.container_top>.new {
-    background-color: #99E2D0;
-    width: fit-content;
-    border-radius: 3px;
-    padding: 5px 10px;
-    position: absolute;
-    margin: 10px; 
-    top: 0;
-    right: 0;
-    color: #20705b;
-}
-
-.container2>a>.container_bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px 20px;
-    color: black;
-}
-
-.name {
-    margin: unset;
-    width: fit-content;
-}
-
-.name>h3 {
-    margin-top: 0;
-    margin-bottom: 5px;
-}
-
-.name>p {
-    margin-bottom: 0;
-    font-weight: lighter;
-}
-
-.place {
-    margin-top: unset;
-}
-
-.heart {
-    font-size: 1.5em;
-}
-
-article h3 {
-    margin-bottom: unset;
 }
 
 /*FOOTER*/
