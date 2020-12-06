@@ -16,7 +16,7 @@ body {
     }
   }
 
-  @keyframes move-price {
+  @keyframes move-prix {
     from {
       margin-right: 0%;
     }
@@ -151,6 +151,7 @@ section>h2 {
 
 .prix {
     right: -20px;
+    animation: move-prix 2s;
 }
 
 button {
@@ -177,6 +178,24 @@ button {
     color: #99e2d0;
     padding: 3px;
   }
+
+.check-appear { 
+    display: block;
+    border-radius: 15px 0px 0px 15px;
+    background-color: #99E2D0;
+    height: auto;
+    width: 80px;
+
+        &:hover {
+            display: block;
+            position: absolute;
+            height: 100px;
+            margin-top: -100px;
+            margin-left: 90%;
+            width: 100px;
+            animation: check-appear 1s;
+        }
+}
 
 
 /*FOOTER*/
