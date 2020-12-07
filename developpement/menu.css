@@ -12,39 +12,82 @@ body {
   min-height: 100vh;
 }
 
-@-webkit-keyframes check-appear {
+/*@keyframes move-prix {
+    from {
+      margin-right: 0%;
+    }
+    to {
+      margin-right: 20%;
+    }
+  }*/
+@-webkit-keyframes heart {
   from {
-    margin-left: 110%;
+    opacity: 0%;
   }
   to {
-    margin-left: 90%;
+    opacity: 100%;
+  }
+}
+@keyframes heart {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
   }
 }
 
-@keyframes check-appear {
+@-webkit-keyframes sous_menu {
   from {
-    margin-left: 110%;
+    opacity: 0;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
   }
   to {
-    margin-left: 90%;
+    margin-bottom: 0px;
+    opacity: 1;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
   }
 }
 
-@-webkit-keyframes move-prix {
+@keyframes sous_menu {
   from {
-    margin-right: 0%;
+    opacity: 0;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
   }
   to {
-    margin-right: 20%;
+    margin-bottom: 0px;
+    opacity: 1;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
   }
 }
 
-@keyframes move-prix {
+@-webkit-keyframes validation {
   from {
-    margin-right: 0%;
+    right: 0%;
   }
   to {
-    margin-right: 20%;
+    right: 100%;
+  }
+}
+
+@keyframes validation {
+  from {
+    right: 0%;
+  }
+  to {
+    right: 100%;
   }
 }
 
@@ -107,13 +150,15 @@ section > h2 {
 #heart {
   height: 30px;
   width: 30px;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-animation: heart;
+          animation: heart;
 }
 
 #heart:hover {
   fill: url(#gradient);
   stroke-width: 0;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 #heart:hover #stroke {
@@ -138,16 +183,6 @@ section > h2 {
 }
 
 .sous_menu {
-  max-width: 350px;
-  width: 100%;
-  padding: 15px;
-  margin: 10px;
-  border-radius: 30px 30px 30px 30px;
-  -webkit-box-shadow: 2px 2px 5px 2px #dddddd;
-          box-shadow: 2px 2px 5px 2px #dddddd;
-  font-family: "roboto";
-  font-size: 1rem;
-  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -161,9 +196,19 @@ section > h2 {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  position: relative;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 30px 30px 30px 30px;
+  -webkit-box-shadow: 2px 2px 5px 2px #dddddd;
+          box-shadow: 2px 2px 5px 2px #dddddd;
+  font-size: 1rem;
+  background-color: white;
   -webkit-animation: menu 1000ms 3500ms both;
           animation: menu 1000ms 3500ms both;
   overflow: hidden;
+  -webkit-animation: plat 1200ms 1500ms both;
+          animation: plat 1200ms 1500ms both;
 }
 
 .sous_menu > h3 {
@@ -213,31 +258,43 @@ button {
   margin-top: 50px;
 }
 
+.sous_menu > .validation {
+  opacity: 0;
+  height: auto;
+  width: 50px;
+  line-height: 105px;
+  text-align: center;
+  background-color: #99e2d0;
+  position: absolute;
+  right: -10%;
+  bottom: 0px;
+  padding-left: 20px;
+}
+
+.sous_menu > .validation:hover {
+  right: 0%;
+  opacity: 1;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
 .fas.fa-check {
-  background-color: white;
-  margin: 35%;
+  opacity: 1;
   border-radius: 50%;
   color: #99e2d0;
-  padding: 3px;
+  background-color: white;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
 }
 
-.check-appear {
-  display: block;
-  border-radius: 15px 0px 0px 15px;
-  background-color: #99E2D0;
-  height: auto;
-  width: 80px;
-}
-
-.check-appear:hover {
-  display: block;
-  position: absolute;
-  height: 100px;
-  margin-top: -100px;
-  margin-left: 90%;
-  width: 100px;
-  -webkit-animation: check-appear 1s;
-          animation: check-appear 1s;
+.fas.fa-check:hover {
+  opacity: 1;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 1000ms;
+  transition: -webkit-transform 1000ms;
+  transition: transform 1000ms;
+  transition: transform 1000ms, -webkit-transform 1000ms;
 }
 
 /*FOOTER*/

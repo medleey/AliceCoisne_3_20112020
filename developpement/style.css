@@ -476,6 +476,8 @@ header > button:active {
   width: 30px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  -webkit-animation: opacity 1s;
+          animation: opacity 1s;
 }
 
 #heart:hover {

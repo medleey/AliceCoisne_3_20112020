@@ -1,3 +1,6 @@
+$cd-violet: #9356DC;
+$cd-degrade: linear-gradient(to bottom right, #FF79DA, #9356DC);
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0px 0px;
@@ -83,11 +86,6 @@ h2 {
     }
   }
 
-
-
-$cd-violet: #9356DC;
-$cd-degrade: linear-gradient(to bottom right, #FF79DA, #9356DC);
-
 /*DESKTOP*/
 /*LOAD*/
 .load-wrapper {
@@ -161,8 +159,7 @@ header h1 {
     background-color: white;
     margin: 0;
     padding: 10px;
-    font-size: 25px;
-    
+    font-size: 25px;  
 }
 
 header>nav {
@@ -259,7 +256,6 @@ header>button {
     }
 }
 
-
 .choose>.icone_ {
     margin-right: 15px;   
 }
@@ -341,11 +337,11 @@ header>button {
     font-size: 1.5rem;
 }
 
-
 #heart {
     height: 30px;
     width: 30px;
     transition: 0.4s;
+    animation: opacity 1s;
         &:hover {
             #stroke {
                 stroke-width: 0;
