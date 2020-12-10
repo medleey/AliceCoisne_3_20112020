@@ -12,6 +12,16 @@ body {
   min-height: 100vh;
 }
 
+.contain {
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.color {
+  background-color: darkgrey;
+}
+
 /*@keyframes move-prix {
     from {
       margin-left: 0%;
@@ -92,20 +102,24 @@ body {
 }
 
 @-webkit-keyframes deroulant {
-  to {
-    opacity: 0;
-  }
   from {
+    opacity: 0;
+    margin-top: 50px;
+  }
+  to {
     opacity: 1;
+    margin-top: 0px;
   }
 }
 
 @keyframes deroulant {
-  to {
-    opacity: 0;
-  }
   from {
+    opacity: 0;
+    margin-top: 50px;
+  }
+  to {
     opacity: 1;
+    margin-top: 0px;
   }
 }
 
@@ -152,6 +166,7 @@ section h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 20px;
 }
 
 section.carte {
@@ -199,23 +214,6 @@ section.carte {
   padding-bottom: 10px;
   border-bottom: 2px solid #99E2D0;
   width: 2em;
-  -webkit-animation: deroulant 1s linear;
-          animation: deroulant 1s linear;
-}
-
-.categorie --one {
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-}
-
-.categorie --two {
-  -webkit-animation-delay: 0,5s;
-          animation-delay: 0,5s;
-}
-
-.categorie --three {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
 }
 
 .sous_menu {
@@ -236,22 +234,56 @@ section.carte {
           align-items: flex-end;
   position: relative;
   overflow: hidden;
+  -webkit-animation: deroulant 2s forwards;
+          animation: deroulant 2s forwards;
+  opacity: 0;
+}
+
+.sous_menu--a {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.sous_menu--b {
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+
+.sous_menu--c {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.sous_menu--d {
+  -webkit-animation-delay: 1500ms;
+          animation-delay: 1500ms;
+}
+
+.sous_menu--e {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.sous_menu--f {
+  -webkit-animation-delay: 2500ms;
+          animation-delay: 2500ms;
 }
 
 .sous_menu :nth-child(1) {
   margin: 0px;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .sous_menu p {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   margin: 0px;
   margin-top: 5px;
   font-weight: lighter;
   text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 1;
 }
 
 .sous_menu .prix {
@@ -268,7 +300,7 @@ section.carte {
   transition: margin-right 1s;
 }
 
-.sous_menu--fisrt {
+.sous_menu--first {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -315,6 +347,7 @@ section.carte {
 .sous_menu:hover .fas.fa-check {
   -webkit-transform: rotate(-360deg);
           transform: rotate(-360deg);
+  margin-right: 20px;
 }
 
 .sous_menu:hover .prix {
@@ -326,19 +359,29 @@ section.carte {
 button {
   display: block;
   margin: 0 auto;
-  width: 140px;
   background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  padding: 15px 30px;
+  padding: 15px 20px;
   border: none;
-  border-radius: 30px;
+  border-radius: 20px;
   outline: none;
   color: white;
   cursor: pointer;
   position: relative;
   -webkit-box-shadow: 0 3px 3px gray;
           box-shadow: 0 3px 3px gray;
-  margin-top: 50px;
+}
+
+button:hover {
+  -webkit-box-shadow: 0 2px 3px gray;
+          box-shadow: 0 2px 3px gray;
+  top: 2px;
+}
+
+button:active {
+  -webkit-box-shadow: 0 1px 3px gray;
+          box-shadow: 0 1px 3px gray;
+  top: 5px;
 }
 
 /*FOOTER*/

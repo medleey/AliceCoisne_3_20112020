@@ -10,6 +10,16 @@ body {
     min-height: 100vh;
 }
 
+.contain {
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+.color {
+    background-color: darkgrey;
+}
+
 /*@keyframes move-prix {
     from {
       margin-left: 0%;
@@ -64,12 +74,14 @@ body {
 }
 
 @keyframes deroulant {
-    to {
+    from {
         opacity: 0;
+        margin-top: 50px;
     }
 
-    from {
+    to {
         opacity: 1;
+        margin-top: 0px;
     }
 }
 
@@ -115,6 +127,7 @@ section {
         justify-content: space-between;
         position: relative;
         display: flex;
+        padding-top: 20px;
     }
 
     &.carte {
@@ -156,19 +169,6 @@ section {
     padding-bottom: 10px;
     border-bottom: 2px solid #99E2D0;
     width: 2em;
-    animation: deroulant 1s linear;
-
-        --one {
-            animation-delay: 0s;
-        }
-
-        --two {
-            animation-delay: 0,5s;
-        }
-
-        --three {
-            animation-delay: 1s;
-        }
 }
 
 .sous_menu {
@@ -182,20 +182,48 @@ section {
     align-items: flex-end;
     position: relative;
     overflow: hidden;
-    
+    animation: deroulant 2s forwards;
+    opacity: 0;
+
+        &--a {
+            animation-delay: 0s;
+        }
+
+        &--b {
+            animation-delay: 500ms;
+        }
+
+        &--c {
+            animation-delay: 1s;
+        }
+
+        &--d {
+            animation-delay: 1500ms;
+        }
+
+        &--e {
+            animation-delay: 2s;
+        }
+
+        &--f {
+            animation-delay: 2500ms;
+        }
 
         :nth-child(1){
             margin: 0px;    
             overflow: hidden;
             text-overflow: ellipsis;
+            white-space: nowrap;
         }
 
         p {
-            flex: 1;
             margin: 0px;
             margin-top: 5px;
             font-weight: lighter;
             text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 1;
         }
 
         .prix {
@@ -208,7 +236,7 @@ section {
             transition: margin-right 1s;
         }
 
-        &--fisrt {
+        &--first {
             display: flex;
             flex-direction: column;
             padding: 15px;
@@ -244,7 +272,8 @@ section {
             }
 
             .fas.fa-check {
-                transform: rotate(-360deg);  
+                transform: rotate(-360deg); 
+                margin-right: 20px; 
             }
 
             .prix {
@@ -257,17 +286,23 @@ section {
 button {
     display: block;
     margin: 0 auto;
-    width: 140px;
     background: $cd-degrade;
-    padding: 15px 30px;
+    padding: 15px 20px;
     border: none;
-    border-radius: 30px;
+    border-radius: 20px;
     outline: none;
     color: white;
     cursor: pointer;
     position: relative;
     box-shadow: 0 3px 3px gray;
-    margin-top: 50px;   
+    &:hover {
+      box-shadow: 0 2px 3px gray;
+      top: 2px;
+    }
+    &:active {
+      box-shadow: 0 1px 3px gray;
+      top: 5px;
+    }
   }
 
 /*FOOTER*/

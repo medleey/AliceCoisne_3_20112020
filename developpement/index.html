@@ -14,31 +14,35 @@
 </head>
 
 <body>
-        <div class="load-wrapper">
-            <div class="load-spinner load-spinner--index load-spinner-balls load-spinner-balls--index"></div>
-        </div>
+    <div class="load-wrapper">
+        <div class="load-spinner load-spinner--index load-spinner-balls load-spinner-balls--index"></div>
+    </div>
+    
+    <!--HEADER-->
+    
+    <header>
+        <div class="contain"></div>
+        <h1>ohmyfood</h1>
+        <nav class="localisation">
+            <span class="fas fa-map-marker-alt header__localisation--icone" aria-hidden="true"></span>
+            Paris, Belleville          
+        </nav>   
         
-        <!--HEADER-->
-        <header>
-            <h1>ohmyfood</h1>
-            <nav class="localisation">
-                <span class="fas fa-map-marker-alt header__localisation--icone" aria-hidden="true"></span>
-                Paris, Belleville          
-            </nav>   
-            
-            <h2>Réservez le menu qui vous convient</h2>
-            <p>
-                Découvrez des restaurants d'exception, 
-                sélectionnés par nos soins
-            </p>
-            <button type="submit">
-                Explorer nos restaurants
-            </button>
-        </header>
-        <!--FIN HEADER-->
-        
-        <!--section-->
-        <section>
+        <h2>Réservez le menu qui vous convient</h2>
+        <p>
+            Découvrez des restaurants d'exception, 
+            sélectionnés par nos soins
+        </p>
+        <button type="submit">
+            Explorer nos restaurants
+        </button>
+    </header>
+    
+    <!--FIN HEADER-->
+    
+    <!--section-->
+    <section>
+        <div class="contain">
             <h2 class="title1">Fonctionnement</h2>
             <div class="fonctionnement_div">
                 <div class="container1">
@@ -75,121 +79,93 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <!--FIN section-->
-        
-        <!--SECTION-->
-        <section class="background2">
-            
-            <div class="restaurants">
-                <h2>Restaurants</h2>
-                <nav class="types">
-                    <div class="container2">
-                        <a href="gout.html">
-                            <div class="container_top">
-                                <div class="new">
-                                    Nouveau
-                                </div>
-                                <img src="ressources/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="palette du gout"/>
-                            </div>
-                            
-                            <div class="container_bottom">
-                                <div class="name">
-                                    <h3>La palette du goût</h3>
-                                    <p class="place">Ménilmontant</p>
-                                </div>
-                            
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" id="heart" >
-                                    <linearGradient id="gradient">
-                                      <stop stop-color="#FF79DA" offset="0%"/>
-                                      <stop stop-color="#9356DC" offset="100%"/>
-                                    </linearGradient>
-                                <path id="stroke" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                              </svg>
+        </div>
+    </section>
+    <!--FIN section-->
     
-                            </div>
-                        </a>
-                    </div>
-                    
-                    
-                    
-                    <div class="container2">
-                        <a href="enchantee.html">
-                            <div class="container_top">
-                                <div class="new">
-                                    Nouveau
-                                </div>
-                                <img src="ressources/stil-u2Lp8tXIcjw-unsplash.jpg" alt="note enchantée"/>
-                            </div>
-                            
-                            <div class="container_bottom">
+    <!--SECTION-->
+    <section class="background2">
+        
+        <div class="restaurants contain">
+            <h2>Restaurants</h2>
+            <div class="types">
+                <div class="groupe">
+                    <a href="gout.html">
+                        <figure>
+                            <span class="new">Nouveau</span>
+                            <img src="ressources/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="palette du gout"/>
+                            <figcaption>
                                 <div class="name">
-                                    <h3>La note enchantée</h3>
-                                    <p class="place">Charonne</p>
+                                    <h3 class="index">La palette du gout</h3>
+                                    <p>Ménilmontant</p>
                                 </div>
-                                
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" id="heart" >
-                                    <linearGradient id="gradient">
-                                      <stop stop-color="#FF79DA" offset="0%"/>
-                                      <stop stop-color="#9356DC" offset="100%"/>
-                                    </linearGradient>
-                                <path id="stroke" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                              </svg>
-                            </div>
-                        </a>
-                    </div>
+                                <div>
+                                    <i class="far fa-heart"></i><i class="fas hidden fa-heart"></i>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </a>
                     
-                    <div class="container2">
-                        <a href="#">
-                            <div class="container_top">
-                                <img src="ressources/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="a la francaise"/>
-                            </div>
-                            
-                            <div class="container_bottom">
+                    <a href="enchantee.html">
+                        <figure>
+                            <span class="new">Nouveau</span>
+                            <img src="ressources/stil-u2Lp8tXIcjw-unsplash.jpg" alt="note enchantée"/>
+                            <figcaption>
                                 <div class="name">
-                                    <h3>À la française</h3>
-                                    <p class="place">Cité Rouge</p>
+                                    <h3 class="index">La note enchantée</h3>
+                                    <p>Charonne</p>
                                 </div>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" id="heart" >
-                                    <linearGradient id="gradient">
-                                      <stop stop-color="#FF79DA" offset="0%"/>
-                                      <stop stop-color="#9356DC" offset="100%"/>
-                                    </linearGradient>
-                                <path id="stroke" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                              </svg>
-                            </div>
-                        </a>
-                    </div>
+                                <div>
+                                    <span><i class="far fa-heart"></i></span>
+                                    <i class="fas hidden fa-heart"></i>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                
+                <div class="groupe">
+                    <a href="#">
+                        <figure>
+                            <span class="new">Nouveau</span>
+                            <img src="ressources/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="a la francaise"/>
+                            <figcaption>
+                                <div class="name">
+                                    <h3 class="index">À la française</h3>
+                                    <p>Cité Rouge</p>
+                                </div>
+                                <div>
+                                    <i class="far fa-heart"></i><i class="fas hidden fa-heart"></i>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </a>
                     
-                    <div class="container2">
-                        <a href="#">
-                            <div class="container_top">
-                                <img src="ressources/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="delice des sens"/>
-                            </div>
-                            
-                            <div class="container_bottom">
+                    <a href="#">
+                        <figure>
+                            <span class="new">Nouveau</span>
+                            <img src="ressources/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="delice des sens"/>
+                            <figcaption>
                                 <div class="name">
-                                    <h3>Le délice des sens</h3>
-                                    <p class="place">Folie-Méricourt</p>
+                                    <h3 class="index">Le délice des sens</h3>
+                                    <p>Folie-Méricourt</p>
                                 </div>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" id="heart" >
-                                    <linearGradient id="gradient">
-                                      <stop stop-color="#FF79DA" offset="0%"/>
-                                      <stop stop-color="#9356DC" offset="100%"/>
-                                    </linearGradient>
-                                <path id="stroke" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                              </svg>
-                            </div>
-                        </a>
-                    </div>
-                </nav>
+                                <div>
+                                    <i class="far fa-heart"></i><i class="fas hidden fa-heart"></i>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
             </div>
-        </section>
-        <!--FIN ARTICLE-->
-        
-        
-        <!--FOOTER-->
-        <footer>
+        </div>
+    </section>
+    <!--FIN ARTICLE-->
+    
+    
+    <!--FOOTER-->
+    <footer>
+        <div class="contain">
             <h2 class="logo_footer">ohmyfood</h2>
             <ul>
                 <li>
@@ -205,6 +181,8 @@
                 <li><a href="#">Mentions légales</a></li>
                 <li><a href="mailto:ohmyfood@sfr.fr">Contact</a></li>
             </ul>
-        </footer>
-        <!--FIN FOOTER-->
+        </div>
+    </footer>
+    <!--FIN FOOTER-->
+    
 </body>

@@ -16,6 +16,12 @@ h2 {
   padding: 20px 20px 0px 20px;
 }
 
+.contain {
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+}
+
 @-webkit-keyframes box-appear {
   0% {
     opacity: 0;
@@ -182,6 +188,24 @@ h2 {
   }
 }
 
+@-webkit-keyframes heart {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes heart {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 /*DESKTOP*/
 /*LOAD*/
 .load-wrapper {
@@ -264,7 +288,7 @@ header h1 {
   font-size: 25px;
 }
 
-header > nav {
+header nav {
   background-color: #eaeaea;
   text-align: center;
   padding: 15px;
@@ -273,17 +297,17 @@ header > nav {
           box-shadow: inset 0px 1px 2px lightgray;
 }
 
-header > .fa-map-marker-alt {
+header .fa-map-marker-alt {
   margin-right: 10px;
 }
 
-header > h2 {
+header h2 {
   text-align: center;
   margin-bottom: 0;
   margin-top: 20px;
 }
 
-header > p {
+header p {
   text-align: center;
   font-weight: lighter;
   width: auto;
@@ -291,7 +315,7 @@ header > p {
   margin: 0;
 }
 
-header > button {
+header button {
   display: block;
   margin: 0 auto;
   background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
@@ -307,13 +331,13 @@ header > button {
           box-shadow: 0 3px 3px gray;
 }
 
-header > button:hover {
+header button:hover {
   -webkit-box-shadow: 0 2px 3px gray;
           box-shadow: 0 2px 3px gray;
   top: 2px;
 }
 
-header > button:active {
+header button:active {
   -webkit-box-shadow: 0 1px 3px gray;
           box-shadow: 0 1px 3px gray;
   top: 5px;
@@ -340,6 +364,7 @@ header > button:active {
   display: flex;
   margin: 10px;
   margin-bottom: 20px;
+  padding-right: 10px;
   background: white;
   max-width: 325px;
   width: 100%;
@@ -389,24 +414,19 @@ header > button:active {
   padding-left: 40px;
 }
 
+.choose .icone_ {
+  margin-right: 15px;
+}
+
+.choose .icone {
+  margin-right: 20px;
+}
+
 .choose:hover :nth-child(1) {
   color: #FF79DA;
 }
 
-.choose > .icone_ {
-  margin-right: 15px;
-}
-
-.choose > .icone {
-  margin-right: 20px;
-}
-
 /*SECTION RESTAURANTS*/
-.background2 {
-  background: #EFEFEF;
-  padding-bottom: 50px;
-}
-
 .types {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -419,11 +439,15 @@ header > button:active {
   width: 100%;
 }
 
-.container2 {
+.types a {
+  color: black;
+  text-decoration: none;
+}
+
+figure {
   background: white;
   height: auto;
   max-width: 325px;
-  width: 100%;
   margin: 20px;
   margin-bottom: 20px;
   border-radius: 20px;
@@ -433,32 +457,19 @@ header > button:active {
   cursor: pointer;
 }
 
-.container2:hover {
+figure:hover {
   -webkit-box-shadow: 1 2px 8px gray;
           box-shadow: 1 2px 8px gray;
   top: 2px;
 }
 
-.container2:active {
+figure:active {
   -webkit-box-shadow: 0 1px 3px gray;
           box-shadow: 0 1px 3px gray;
   top: 5px;
 }
 
-.container2 > a {
-  color: black;
-  text-decoration: none;
-}
-
-.container_top > img {
-  height: 175px;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 20px 20px 0px 0px;
-}
-
-.container_top > .new {
+figure .new {
   background-color: #99E2D0;
   display: inline;
   border-radius: 3px;
@@ -470,7 +481,51 @@ header > button:active {
   color: #20705b;
 }
 
-.container_bottom {
+figure img {
+  height: 175px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+
+figure .far {
+  margin-top: 0px;
+  position: absolute;
+  right: 5%;
+  font-size: 24px;
+  -webkit-animation: heart 1s;
+          animation: heart 1s;
+  opacity: 1;
+  background-color: white;
+}
+
+figure .far:hover {
+  color: white;
+  opacity: 0;
+}
+
+figure .fas.hidden {
+  margin-top: -1px;
+  position: absolute;
+  right: 5%;
+  opacity: 0;
+  font-size: 24px;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+  background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: 1s;
+          animation: 1s;
+}
+
+figure .fas.hidden:hover {
+  opacity: 1;
+}
+
+figcaption {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -483,38 +538,38 @@ header > button:active {
   padding: 10px 20px 10px 20px;
 }
 
-.container_bottom > .name > h3 {
+figcaption h3 {
   margin: 0;
   margin-bottom: 5px;
 }
 
-.container_bottom > .name > p {
+figcaption p {
   margin: 0;
   margin-bottom: 10px;
 }
 
-.fa-heart {
-  right: 0;
-  position: relative;
-  font-size: 1.5rem;
+figcaption .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-#heart {
-  height: 30px;
-  width: 30px;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  -webkit-animation: opacity 1s;
-          animation: opacity 1s;
+.groupe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-#heart:hover {
-  fill: url(#gradient);
-  stroke-width: 0;
-}
-
-#heart:hover #stroke {
-  stroke-width: 0;
+.background2 {
+  background: #EFEFEF;
+  padding-bottom: 50px;
 }
 
 /*FOOTER*/
@@ -525,7 +580,7 @@ footer {
   text-decoration: none;
 }
 
-.logo_footer {
+footer .logo_footer {
   font-family: 'shrikhand', cursive;
   margin: 0px;
   font-size: 18px;
@@ -562,6 +617,9 @@ footer ul {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .groupe {
+    display: unset;
   }
 }
 /*# sourceMappingURL=style.css.map */
