@@ -142,7 +142,7 @@ section {
     }
 }
 
-#heart {
+/*#heart {
     height: 30px;
     width: 30px;
     animation: heart; 
@@ -155,7 +155,40 @@ section {
             
             transition: 1s ease-in-out;
         }
-}
+}*/
+
+.far {
+    margin-top: 0px;
+    position: absolute;
+    right: 5%;
+    font-size: 24px;
+    animation: heart 1s;
+    opacity: 1;
+
+    &:hover {
+      color: white;
+      opacity: 0;
+    }
+  }
+
+  .fas.hidden {
+    margin-top: -1px;
+    position: absolute;
+    right: 5%;
+    opacity: 0;
+    font-size: 24px;
+    transition: 0.4s ease-out;
+    background: -webkit-linear-gradient(#FF79DA, #9356DC);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: 1s;
+  
+      &:hover {
+        opacity: 1;
+
+      }
+  }
 
 /*MENU*/
 .menu_entier {

@@ -494,10 +494,11 @@ figure .far {
   position: absolute;
   right: 5%;
   font-size: 24px;
+  -webkit-transition: 0,4s ease-out;
+  transition: 0,4s ease-out;
   -webkit-animation: heart 1s;
           animation: heart 1s;
   opacity: 1;
-  background-color: white;
 }
 
 figure .far:hover {

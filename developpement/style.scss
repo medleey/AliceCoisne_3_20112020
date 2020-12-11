@@ -344,9 +344,10 @@ figure {
         position: absolute;
         right: 5%;
         font-size: 24px;
+        transition: 0,4s ease-out;
         animation: heart 1s;
         opacity: 1;
-        background-color: white;
+        
 
         &:hover {
           color: white;
