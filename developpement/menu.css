@@ -182,20 +182,42 @@ section.carte {
           animation: 2s;
 }
 
-/*#heart {
-    height: 30px;
-    width: 30px;
-    animation: heart; 
-        &:hover {
-            #stroke {
-                stroke-width: 0;
-            }
-            fill: url(#gradient);
-            stroke-width: 0;
-            
-            transition: 1s ease-in-out;
-        }
-}*/
+.heart_container .far {
+  margin-top: 0px;
+  position: absolute;
+  right: 5%;
+  font-size: 24px;
+  -webkit-transition: 0,4s ease-in;
+  transition: 0,4s ease-in;
+  -webkit-animation: heart 0,4s;
+          animation: heart 0,4s;
+  opacity: 1;
+}
+
+.heart_container .fas.hidden {
+  margin-top: -1px;
+  position: absolute;
+  right: 5%;
+  opacity: 0;
+  font-size: 24px;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+  background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: 1s;
+          animation: 1s;
+}
+
+.heart_container:hover .far {
+  opacity: 0;
+}
+
+.heart_container:hover .fas.hidden {
+  opacity: 1;
+}
+
 .far {
   margin-top: 0px;
   position: absolute;
@@ -346,7 +368,7 @@ section.carte {
   opacity: 0;
   height: 90px;
   width: 0px;
-  line-height: 105px;
+  line-height: 120px;
   text-align: center;
   background-color: #99e2d0;
   position: absolute;
@@ -355,11 +377,13 @@ section.carte {
   right: -50px;
   bottom: 0px;
   padding-left: 20px;
+  padding-right: 5px;
 }
 
 .sous_menu .fas.fa-check {
   border-radius: 50%;
   color: #99e2d0;
+  font-size: 22px;
   background-color: white;
   -webkit-transform: rotate(0);
           transform: rotate(0);

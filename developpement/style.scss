@@ -339,24 +339,22 @@ figure {
         border-radius: 20px 20px 0px 0px;
       }
 
-      .far {
-        margin-top: 0px;
+      
+}
+
+.heart_container {
+    .far {
+      margin-top: 0px;
         position: absolute;
         right: 5%;
         font-size: 24px;
-        transition: 0,4s ease-out;
-        animation: heart 1s;
+        transition: 0,4s ease-in;
+        animation: heart 0,4s;
         opacity: 1;
-        
+    }
 
-        &:hover {
-          color: white;
-          opacity: 0;
-        }
-      }
-
-      .fas.hidden {
-        margin-top: -1px;
+    .fas.hidden {
+      margin-top: -1px;
         position: absolute;
         right: 5%;
         opacity: 0;
@@ -367,16 +365,18 @@ figure {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         animation: 1s;
-      
-          &:hover {
-            opacity: 1;
-    
-          }
+    }
+
+    &:hover {
+
+      .far {
+          opacity: 0;
       }
-
-      
+      .fas.hidden {
+        opacity: 1;
+      }
+    }
 }
-
 
 figcaption {
     display: flex;
