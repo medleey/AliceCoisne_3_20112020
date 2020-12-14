@@ -15,21 +15,12 @@ body {
 .contain {
   max-width: 1100px;
   margin: 0 auto;
-  width: 100%;
 }
 
 .color {
   background-color: darkgrey;
 }
 
-/*@keyframes move-prix {
-    from {
-      margin-left: 0%;
-    }
-    to {
-      margin-left: 30%;
-    }
-  }*/
 @-webkit-keyframes carte {
   from {
     opacity: 0%;
@@ -38,6 +29,7 @@ body {
     opacity: 100%;
   }
 }
+
 @keyframes carte {
   from {
     opacity: 0%;
@@ -156,27 +148,24 @@ header img {
 
 /*SECTION MENU*/
 section h2 {
-  margin: 20px;
-  text-align: center;
-  font-family: 'shrikhand', cursive;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px;
+  margin-top: -50px;
+  border-radius: 15px 15px 0px 0px;
+  background-color: #EFEFEF;
+  font-family: "shrikhand";
 }
 
 section.carte {
   background-color: #EFEFEF;
-  position: relative;
-  -webkit-transform: translateY(-5%);
-          transform: translateY(-5%);
   height: auto;
   width: 100%;
-  border-radius: 20px 20px 0px 0px;
   padding-bottom: 50px;
   -webkit-animation: 2s;
           animation: 2s;
@@ -265,7 +254,7 @@ section.carte {
   font-weight: lighter;
   display: block;
   padding-bottom: 10px;
-  border-bottom: 2px solid #99E2D0;
+  border-bottom: 3px solid #99E2D0;
   width: 2em;
 }
 
@@ -416,11 +405,13 @@ button {
   margin: 0 auto;
   background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  padding: 15px 20px;
+  padding: 15px 40px;
   border: none;
-  border-radius: 20px;
+  border-radius: 30px;
   outline: none;
   color: white;
+  margin-top: 70px;
+  margin-bottom: 30px;
   cursor: pointer;
   position: relative;
   -webkit-box-shadow: 0 3px 3px gray;
@@ -445,8 +436,6 @@ footer {
   color: white;
   padding: 20px;
   text-decoration: none;
-  -webkit-transform: translateY(-30%);
-          transform: translateY(-30%);
 }
 
 footer ul {

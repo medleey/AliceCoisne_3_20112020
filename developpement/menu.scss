@@ -13,21 +13,11 @@ body {
 .contain {
     max-width: 1100px;
     margin: 0 auto;
-    width: 100%;
   }
 
 .color {
     background-color: darkgrey;
 }
-
-/*@keyframes move-prix {
-    from {
-      margin-left: 0%;
-    }
-    to {
-      margin-left: 30%;
-    }
-  }*/
 
 
 @keyframes carte {
@@ -121,22 +111,20 @@ header {
 
 section {
     h2 {
-        margin: 20px;
-        text-align: center;
-        font-family: 'shrikhand', cursive;
-        justify-content: space-between;
         position: relative;
         display: flex;
-        padding-top: 20px;
+        justify-content: space-between;
+        padding: 15px;
+        margin-top: -50px;
+        border-radius: 15px 15px 0px 0px;
+        background-color: #EFEFEF;
+        font-family: "shrikhand";
     }
 
     &.carte {
         background-color: #EFEFEF;
-        position: relative;
-        transform: translateY(-5%);
         height: auto;
         width: 100%;
-        border-radius: 20px 20px 0px 0px;
         padding-bottom: 50px;
         animation: 2s;    
     }
@@ -221,7 +209,7 @@ section {
     font-weight: lighter;
     display: block;
     padding-bottom: 10px;
-    border-bottom: 2px solid #99E2D0;
+    border-bottom: 3px solid #99E2D0;
     width: 2em;
 }
 
@@ -343,11 +331,13 @@ button {
     display: block;
     margin: 0 auto;
     background: $cd-degrade;
-    padding: 15px 20px;
+    padding: 15px 40px;
     border: none;
-    border-radius: 20px;
+    border-radius: 30px;
     outline: none;
     color: white;
+    margin-top: 70px;
+    margin-bottom: 30px;
     cursor: pointer;
     position: relative;
     box-shadow: 0 3px 3px gray;
@@ -368,7 +358,6 @@ footer {
     color: white;
     padding: 20px;
     text-decoration: none;
-    transform: translateY(-30%);
 
     ul {
         padding: 0;
