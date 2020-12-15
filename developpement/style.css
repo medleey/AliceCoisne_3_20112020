@@ -49,7 +49,7 @@ h2 {
   }
 }
 
-@-webkit-keyframes load-spinner-balls {
+@-webkit-keyframes loadding-spinner-balls {
   0% {
     opacity: 1;
     -webkit-transform: rotate(0);
@@ -61,7 +61,7 @@ h2 {
   }
 }
 
-@keyframes load-spinner-balls {
+@keyframes loadding-spinner-balls {
   0% {
     opacity: 1;
     -webkit-transform: rotate(0);
@@ -73,7 +73,7 @@ h2 {
   }
 }
 
-@-webkit-keyframes load-spinner-balls-index {
+@-webkit-keyframes loadding-spinner-balls-index {
   0% {
     opacity: 1;
     -webkit-transform: rotate(0);
@@ -87,7 +87,7 @@ h2 {
   }
 }
 
-@keyframes load-spinner-balls-index {
+@keyframes loadding-spinner-balls-index {
   0% {
     opacity: 1;
     -webkit-transform: rotate(0);
@@ -206,8 +206,8 @@ h2 {
 }
 
 /*DESKTOP*/
-/*LOAD*/
-.load-wrapper {
+/*LOADDING ACCUEIL*/
+.loadding {
   display: block;
   top: 0;
   left: 0;
@@ -219,7 +219,7 @@ h2 {
           animation: load-wrapper 5s;
 }
 
-.load-spinner {
+.loadding-spinner {
   margin: 30px 48%;
   width: 40px;
   height: 40px;
@@ -227,22 +227,22 @@ h2 {
   position: absolute;
 }
 
-.load-spinner.load-spinner--index {
+.loadding-spinner.loadding-spinner--index {
   margin: 400px 40%;
   width: 25%;
 }
 
-.load-spinner-balls {
+.loadding-spinner-balls {
   -webkit-animation: load-spinner-balls 1.5s linear;
           animation: load-spinner-balls 1.5s linear;
 }
 
-.load-spinner-balls.load-spinner-balls--index {
+.loadding-spinner-balls.load-spinner-balls--index {
   -webkit-animation: load-spinner-balls-index 3s alternate;
           animation: load-spinner-balls-index 3s alternate;
 }
 
-.load-spinner-balls:before {
+.loadding-spinner-balls:before {
   border-radius: 50%;
   content: "";
   width: 20px;
@@ -251,11 +251,11 @@ h2 {
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-animation: load-spinner-balls-before 1.5s;
-          animation: load-spinner-balls-before 1.5s;
+  -webkit-animation: loadding-spinner-balls-before 1.5s;
+          animation: loadding-spinner-balls-before 1.5s;
 }
 
-.load-spinner-balls:after {
+.loadding-spinner-balls:after {
   border-radius: 50%;
   content: "";
   width: 20px;
@@ -266,8 +266,8 @@ h2 {
   position: absolute;
   bottom: 0;
   right: 0;
-  -webkit-animation: load-spinner-balls-after 1.5s;
-          animation: load-spinner-balls-after 1.5s;
+  -webkit-animation: loadding-spinner-balls-after 1.5s;
+          animation: loadding-spinner-balls-after 1.5s;
 }
 
 /*HEADER*/
@@ -357,7 +357,7 @@ header button:active {
           justify-content: space-evenly;
 }
 
-.container1 {
+.container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -375,7 +375,7 @@ header button:active {
   position: relative;
 }
 
-.container1:hover {
+.container:hover {
   background: #fff3fc;
 }
 
@@ -458,8 +458,8 @@ figure {
 }
 
 figure:hover {
-  -webkit-box-shadow: 1 2px 8px gray;
-          box-shadow: 1 2px 8px gray;
+  -webkit-box-shadow: 1px 2px 8px gray;
+          box-shadow: 1px 2px 8px gray;
   top: 2px;
 }
 

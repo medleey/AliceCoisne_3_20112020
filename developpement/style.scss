@@ -33,7 +33,7 @@ h2 {
   }
 }
 
-@keyframes load-spinner-balls {
+@keyframes loadding-spinner-balls {
   0% {
     opacity: 1;
     transform: rotate(0);
@@ -43,7 +43,7 @@ h2 {
   }
 }
 
-@keyframes load-spinner-balls-index {
+@keyframes loadding-spinner-balls-index {
   0% {
     opacity: 1;
     transform: rotate(0);
@@ -101,8 +101,8 @@ h2 {
 }
 
 /*DESKTOP*/
-/*LOAD*/
-.load-wrapper {
+/*LOADDING ACCUEIL*/
+.loadding {
   display: block;
   top: 0;
   left: 0;
@@ -113,7 +113,7 @@ h2 {
   animation: load-wrapper 5s;
 }
 
-.load-spinner {
+.loadding-spinner {
   margin: 30px 48%;
   width: 40px;
   height: 40px;
@@ -121,20 +121,20 @@ h2 {
   position: absolute;
 }
 
-.load-spinner.load-spinner--index {
+.loadding-spinner.loadding-spinner--index {
   margin: 400px 40%;
   width: 25%;
 }
 
-.load-spinner-balls {
+.loadding-spinner-balls {
   animation: load-spinner-balls 1.5s linear;
 }
 
-.load-spinner-balls.load-spinner-balls--index {
+.loadding-spinner-balls.load-spinner-balls--index {
   animation: load-spinner-balls-index 3s alternate;
 }
 
-.load-spinner-balls:before {
+.loadding-spinner-balls:before {
   border-radius: 50%;
   content: "";
   width: 20px;
@@ -143,10 +143,10 @@ h2 {
   position: absolute;
   top: 0;
   left: 0;
-  animation: load-spinner-balls-before 1.5s;
+  animation: loadding-spinner-balls-before 1.5s;
 }
 
-.load-spinner-balls:after {
+.loadding-spinner-balls:after {
   border-radius: 50%;
   content: "";
   width: 20px;
@@ -156,7 +156,7 @@ h2 {
   position: absolute;
   bottom: 0;
   right: 0;
-  animation: load-spinner-balls-after 1.5s;
+  animation: loadding-spinner-balls-after 1.5s;
 }
 
 /*HEADER*/
@@ -231,7 +231,7 @@ header {
   padding: 20px;
   justify-content: space-evenly;
 }
-.container1 {
+.container {
   display: flex;
   margin: 10px;
   margin-bottom: 20px;
@@ -311,7 +311,7 @@ figure {
   cursor: pointer;
 
       &:hover {
-        box-shadow: 1 2px 8px gray;
+        box-shadow: 1px 2px 8px gray;
         top: 2px;
       }
       &:active {
@@ -343,7 +343,7 @@ figure {
 
 .heart_container {
     .far {
-      margin-top: 0px;
+        margin-top: 0px;
         position: absolute;
         right: 5%;
         font-size: 24px;
@@ -353,7 +353,7 @@ figure {
     }
 
     .fas.hidden {
-      margin-top: -1px;
+        margin-top: -1px;
         position: absolute;
         right: 5%;
         opacity: 0;
