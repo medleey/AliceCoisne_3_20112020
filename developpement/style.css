@@ -49,7 +49,33 @@ h2 {
   }
 }
 
-@-webkit-keyframes loadding-spinner-balls {
+@-webkit-keyframes load-wrapper {
+  0% {
+    z-index: 1;
+    position: fixed;
+  }
+  75% {
+    z-index: 1;
+  }
+  100% {
+    z-index: -1;
+  }
+}
+
+@keyframes load-wrapper {
+  0% {
+    z-index: 1;
+    position: fixed;
+  }
+  75% {
+    z-index: 1;
+  }
+  100% {
+    z-index: -1;
+  }
+}
+
+@-webkit-keyframes load-spinner-balls {
   0% {
     opacity: 1;
     -webkit-transform: rotate(0);
@@ -61,7 +87,7 @@ h2 {
   }
 }
 
-@keyframes loadding-spinner-balls {
+@keyframes load-spinner-balls {
   0% {
     opacity: 1;
     -webkit-transform: rotate(0);
@@ -73,7 +99,7 @@ h2 {
   }
 }
 
-@-webkit-keyframes loadding-spinner-balls-index {
+@-webkit-keyframes load-spinner-balls-index {
   0% {
     opacity: 1;
     -webkit-transform: rotate(0);
@@ -87,7 +113,7 @@ h2 {
   }
 }
 
-@keyframes loadding-spinner-balls-index {
+@keyframes load-spinner-balls-index {
   0% {
     opacity: 1;
     -webkit-transform: rotate(0);
@@ -161,32 +187,6 @@ h2 {
   }
 }
 
-@-webkit-keyframes load-wrapper {
-  0% {
-    z-index: 1;
-    position: fixed;
-  }
-  75% {
-    z-index: 1;
-  }
-  100% {
-    z-index: -1;
-  }
-}
-
-@keyframes load-wrapper {
-  0% {
-    z-index: 1;
-    position: fixed;
-  }
-  75% {
-    z-index: 1;
-  }
-  100% {
-    z-index: -1;
-  }
-}
-
 @-webkit-keyframes heart {
   from {
     opacity: 1;
@@ -207,7 +207,7 @@ h2 {
 
 /*DESKTOP*/
 /*LOADDING ACCUEIL*/
-.loadding {
+.load {
   display: block;
   top: 0;
   left: 0;
@@ -219,7 +219,7 @@ h2 {
           animation: load-wrapper 5s;
 }
 
-.loadding-spinner {
+.load-spinner {
   margin: 30px 48%;
   width: 40px;
   height: 40px;
@@ -227,22 +227,22 @@ h2 {
   position: absolute;
 }
 
-.loadding-spinner.loadding-spinner--index {
+.load-spinner.load-spinner--index {
   margin: 400px 40%;
   width: 25%;
 }
 
-.loadding-spinner-balls {
+.load-spinner-balls {
   -webkit-animation: load-spinner-balls 1.5s linear;
           animation: load-spinner-balls 1.5s linear;
 }
 
-.loadding-spinner-balls.load-spinner-balls--index {
+.load-spinner-balls.load-spinner-balls--index {
   -webkit-animation: load-spinner-balls-index 3s alternate;
           animation: load-spinner-balls-index 3s alternate;
 }
 
-.loadding-spinner-balls:before {
+.load-spinner-balls:before {
   border-radius: 50%;
   content: "";
   width: 20px;
@@ -251,11 +251,11 @@ h2 {
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-animation: loadding-spinner-balls-before 1.5s;
-          animation: loadding-spinner-balls-before 1.5s;
+  -webkit-animation: load-spinner-balls-before 1.5s;
+          animation: load-spinner-balls-before 1.5s;
 }
 
-.loadding-spinner-balls:after {
+.load-spinner-balls:after {
   border-radius: 50%;
   content: "";
   width: 20px;
@@ -266,8 +266,8 @@ h2 {
   position: absolute;
   bottom: 0;
   right: 0;
-  -webkit-animation: loadding-spinner-balls-after 1.5s;
-          animation: loadding-spinner-balls-after 1.5s;
+  -webkit-animation: load-spinner-balls-after 1.5s;
+          animation: load-spinner-balls-after 1.5s;
 }
 
 /*HEADER*/
