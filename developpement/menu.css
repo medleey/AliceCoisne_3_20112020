@@ -57,24 +57,6 @@ body {
   }
 }
 
-@keyframes carte {
-  from {
-    opacity: 0;
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
-    -webkit-transform-origin: 100% 0%;
-            transform-origin: 100% 0%;
-  }
-  to {
-    margin-bottom: 0px;
-    opacity: 1;
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
-    -webkit-transform-origin: 100% 0%;
-            transform-origin: 100% 0%;
-  }
-}
-
 @-webkit-keyframes validation {
   from {
     right: 0%;
@@ -279,6 +261,7 @@ section.carte {
   -webkit-animation: deroulant 2s forwards;
           animation: deroulant 2s forwards;
   opacity: 0;
+  cursor: pointer;
 }
 
 .sous_menu--a {
@@ -448,6 +431,14 @@ footer ul > li > a {
   text-decoration: none;
   color: white;
   cursor: pointer;
+}
+
+footer .icone_footer1 {
+  margin-right: 10px;
+}
+
+footer .icone_footer2 {
+  margin-right: 4px;
 }
 
 .logo_footer {

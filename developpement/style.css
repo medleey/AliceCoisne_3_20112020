@@ -373,6 +373,7 @@ header button:active {
           box-shadow: 1px 1px 10px lightgrey;
   margin-top: 20px;
   position: relative;
+  cursor: pointer;
 }
 
 .container:hover {
@@ -580,11 +581,10 @@ footer {
   text-decoration: none;
 }
 
-footer .logo_footer {
-  font-family: 'shrikhand', cursive;
-  margin: 0px;
-  font-size: 18px;
+footer ul {
   padding: 0;
+  list-style: none;
+  line-height: 30px;
 }
 
 footer ul > li > a {
@@ -593,10 +593,19 @@ footer ul > li > a {
   cursor: pointer;
 }
 
-footer ul {
+footer .icone_footer1 {
+  margin-right: 10px;
+}
+
+footer .icone_footer2 {
+  margin-right: 4px;
+}
+
+.logo_footer {
+  font-family: 'shrikhand', cursive;
+  margin: 0px;
+  font-size: 18px;
   padding: 0;
-  list-style: none;
-  line-height: 30px;
 }
 
 @media (max-width: 1100px) {

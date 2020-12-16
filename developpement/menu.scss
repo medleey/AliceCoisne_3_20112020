@@ -38,21 +38,6 @@ body {
     }
 }
 
-@keyframes carte {
-    from {
-    opacity: 0;
-    transform: scaleY(0);
-    transform-origin: 100% 0%;
-    }
-
-    to {
-        margin-bottom: 0px;
-        opacity: 1;
-        transform: scaleY(1);
-        transform-origin: 100% 0%;
-    }
-}
-
 @keyframes validation {
     from {
         right: 0%;
@@ -226,6 +211,7 @@ section {
     overflow: hidden;
     animation: deroulant 2s forwards;
     opacity: 0;
+    cursor: pointer;
 
         &--a {
             animation-delay: 0s;
@@ -369,6 +355,14 @@ footer {
         text-decoration: none;
         color: white;
         cursor: pointer;
+    }
+
+    .icone_footer1 {
+        margin-right: 10px;
+    }
+
+    .icone_footer2 {
+        margin-right: 4px;
     }
 }
 
