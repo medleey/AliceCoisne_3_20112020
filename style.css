@@ -61,8 +61,12 @@ h2 {
   0% {
     opacity: 1;
   }
+  60% {
+    opacity: 1;
+  }
   99% {
     opacity: 0;
+    z-index: 1;
   }
   100% {
     z-index: -1;
@@ -73,8 +77,12 @@ h2 {
   0% {
     opacity: 1;
   }
+  60% {
+    opacity: 1;
+  }
   99% {
     opacity: 0;
+    z-index: 1;
   }
   100% {
     z-index: -1;
@@ -84,7 +92,7 @@ h2 {
 /*DESKTOP*/
 /*LOADDING ACCUEIL*/
 .load {
-  position: absolute;
+  position: fixed;
   background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   height: 100%;
@@ -92,8 +100,8 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-animation: 5s load;
-          animation: 5s load;
+  -webkit-animation: 3s load forwards;
+          animation: 3s load forwards;
   z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -122,8 +130,8 @@ h2 {
   border-radius: 50%;
   display: inline-block;
   margin-left: 35px;
-  -webkit-animation: 2s load-spinner;
-          animation: 2s load-spinner;
+  -webkit-animation: 1s load-spinner;
+          animation: 1s load-spinner;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
   background: white;

@@ -39,12 +39,18 @@ h2 {
 }
 
 @keyframes load {
-  0% {
+  0%{
+    opacity: 1;
+  }
+
+  60% {
     opacity: 1;
   }
   99% {
     opacity: 0;
+    z-index: 1;
   }
+
   100% {
     z-index: -1;
   }
@@ -56,12 +62,12 @@ h2 {
 $loader-dot-size: 25px;
 $loader-dot-margin: 35px;
 .load {
-  position: absolute;
+  position: fixed;
   background: $cd-degrade;
   height: 100%;
   width: 100%;
   justify-content: center;
-  animation: 5s load;
+  animation: 3s load forwards; 
   z-index: 1;
   display: flex;
   flex-direction: column;
@@ -86,7 +92,7 @@ $loader-dot-margin: 35px;
 	border-radius: 50%;
 	display: inline-block;
 	margin-left: $loader-dot-margin;
-	animation: 2s load-spinner;
+	animation: 1s load-spinner;
 	animation-timing-function: ease-in-out;
   background: white;
   align-items: center;
