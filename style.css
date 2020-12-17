@@ -102,8 +102,8 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-animation: 3s load forwards;
-          animation: 3s load forwards;
+  -webkit-animation: 4s load forwards;
+          animation: 4s load forwards;
   z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
