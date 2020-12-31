@@ -387,10 +387,10 @@ figure img {
   position: absolute;
   right: 5%;
   font-size: 24px;
-  -webkit-transition: 0,4s ease-in;
-  transition: 0,4s ease-in;
-  -webkit-animation: heart 0,4s;
-          animation: heart 0,4s;
+  -webkit-transition: 0.4s ease-in;
+  transition: 0.4s ease-in;
+  -webkit-animation: heart 0.4s;
+          animation: heart 0.4s;
   opacity: 1;
 }
 
@@ -403,7 +403,6 @@ figure img {
   -webkit-transition: 0.4s ease-out;
   transition: 0.4s ease-out;
   background: -webkit-linear-gradient(#FF79DA, #9356DC);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-animation: 1s;
