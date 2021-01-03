@@ -288,16 +288,6 @@ section.carte {
           animation-delay: 1500ms;
 }
 
-.sous_menu--e {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-}
-
-.sous_menu--f {
-  -webkit-animation-delay: 2500ms;
-          animation-delay: 2500ms;
-}
-
 .sous_menu :nth-child(1) {
   margin: 0px;
   overflow: hidden;
