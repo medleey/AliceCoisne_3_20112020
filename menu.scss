@@ -19,32 +19,12 @@ body {
     background-color: darkgrey;
 }
 
-
-@keyframes carte {
-    from {
-        opacity: 0%;
-    }
-    to {
-        opacity: 100%;
-    }
-}
-
 @keyframes heart {
     from {
         opacity: 0%;
     }
     to {
         opacity: 100%;
-    }
-}
-
-@keyframes validation {
-    from {
-        right: 0%;
-    }
-
-    to {
-        right: 100%;
     }
 }
 

@@ -21,24 +21,6 @@ body {
   background-color: darkgrey;
 }
 
-@-webkit-keyframes carte {
-  from {
-    opacity: 0%;
-  }
-  to {
-    opacity: 100%;
-  }
-}
-
-@keyframes carte {
-  from {
-    opacity: 0%;
-  }
-  to {
-    opacity: 100%;
-  }
-}
-
 @-webkit-keyframes heart {
   from {
     opacity: 0%;
@@ -54,24 +36,6 @@ body {
   }
   to {
     opacity: 100%;
-  }
-}
-
-@-webkit-keyframes validation {
-  from {
-    right: 0%;
-  }
-  to {
-    right: 100%;
-  }
-}
-
-@keyframes validation {
-  from {
-    right: 0%;
-  }
-  to {
-    right: 100%;
   }
 }
 
